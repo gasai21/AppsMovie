@@ -1,0 +1,15 @@
+<Tab>
+    <tab
+        id="@+id/tab_new"
+        icon="@drawable/ic_new"
+        activeColor="@color/colorbottombar"
+        titleSize="6dp"
+        title="New Movie"/>
+
+    <tab
+        id="@+id/tab_video"
+        icon="@drawable/ic_video"
+        activeColor="@color/colorbottombar"
+        titleSize="6dp"
+        title="Recommended"/>
+</Tab>

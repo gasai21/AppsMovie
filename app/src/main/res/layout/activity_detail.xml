@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pangling.projectmovieiak.DetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimaryDark"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            android:fitsSystemWindows="true">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:title="Coba"
+                android:background="@color/colorPrimary"
+                app:layout_collapseMode="pin" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/imgfotoMovie"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:textSize="21sp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/tvtglDetal"
+                    android:textColor="#000"
+                    android:text="Coba"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgfotoMovie"/>
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/tvRateDetal"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Coba"
+                    android:layout_below="@+id/tvtglDetal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgfotoMovie"/>
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/tvpopularDetal"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:padding="13dp"
+                    android:text="Coba"
+                    android:layout_below="@+id/tvRateDetal"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgfotoMovie"/>
+
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvketeranganDetal"
+                    android:textColor="#000"
+                    android:text="Coba"
+                    android:layout_below="@+id/imgfotoMovie"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/tvGarisOwner"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@+id/tvketeranganDetal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trailers"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/tvGarisOwner"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvTrailer"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tvTrailer"
+                    android:id="@+id/rvTrailer"
+                    android:layout_marginTop="10dp">
+
+                </android.support.v7.widget.RecyclerView>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
